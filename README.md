@@ -3,7 +3,7 @@ Middle Georgia State University Robotics Research repository
 
 ## How To Get Started
 
-###Eyes
+### Eyes
 These are the prerequisites for running the files in this repository with an arduino:
 
 - Possess an [8x8 led matrix](https://create.arduino.cc/projecthub/SAnwandter1/programming-8x8-led-matrix-23475a)
