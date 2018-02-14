@@ -1,0 +1,61 @@
+int motor = 9;
+int input = 0;
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+
+  if(Serial.available()){
+
+    input = Serial.read() - '0';
+    Serial.println(input);
+  }
+
+  switch(input){
+
+    case 0:
+      analogWrite(motor, 0);
+      break;
+    
+    case 1:
+      analogWrite(motor, 25);
+      break;
+
+    case 2:
+      analogWrite(motor, 50);
+      
+      break;
+
+    case 3:
+      analogWrite(motor, 75);
+      break;
+
+    case 4:
+      analogWrite(motor, 100);
+      break;
+
+    case 5:
+      analogWrite(motor, 125);
+      break;
+
+    case 6:
+      analogWrite(motor, 150);
+      break;
+
+    case 7:
+      analogWrite(motor, 175);
+      break;
+
+    case 8:
+      analogWrite(motor, 200);
+      break;
+
+    case 9:
+      analogWrite(motor, 225);
+      break;
+    
+  }
+    
+}
